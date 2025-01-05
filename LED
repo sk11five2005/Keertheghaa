@@ -1,0 +1,22 @@
+#Traffic light LED blinking
+
+
+void setup() {
+  pinMode(4,OUTPUT);
+  pinMode(3,OUTPUT);
+  pinMode(2,OUTPUT);
+}
+
+void loop() {
+  digitalWrite(4, HIGH);//for red light
+  delay(4000);
+  digitalWrite(4,LOW);
+ 
+  digitalWrite(3, HIGH);//for green light
+  delay(3000);
+  digitalWrite(3,LOW);
+
+  digitalWrite(2, HIGH);//for yellow light
+  delay(2000);
+  digitalWrite(2,LOW);
+}
